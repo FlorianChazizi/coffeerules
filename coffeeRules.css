@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    
+}
+body{
+}
+
+nav{
+    height: 6rem;
+    width: 100vw;
+    background-color: #131418;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: relative;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;;
+}
+
+/*Styling logo*/
+.logo{
+    padding:1vh 1vw;
+    text-align: center;
+}
+.logo img{
+    height: 9.5vh;
+    width: 9.5vh;
+    border-radius: 50%;
+}
+
+/*Styling Links*/
+
+.nav-button{
+    padding: 22px 11px;
+    border-radius: 12px;
+    transition: 0.5s ease-in-out;
+}
+.nav-button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.nav-links{
+    display: flex;
+    list-style: none; 
+    width: 88vw;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    color: #f2f5f7;
+
+}
+.nav-links li a{
+    text-decoration: none;
+    margin: 0 0.7vw;
+    color: #f2f5f7;
+
+}
+
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    transition: all ease-in-out 250ms;
+    margin: 12% 0 0 10%;
+}
+.nav-links li a:hover::before{
+    width: 80%;
+}
+
+/*Styling Hamburger Icon*/
+.hamburger div{
+    width: 30px;
+    height:3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.hamburger{
+    display: none;
+}
+
+/*Stying for small screens*/
+
+@media screen and (max-width: 800px){
+    nav{
+        position: fixed;
+        z-index: 3;
+    }
+    .hamburger{
+        display:block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+    .nav-links{
+        position: fixed;
+        background: #131418;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.7s;
+    }
+    .nav-links li:nth-child(5){
+        transition: all 0.5s ease 0.8s;
+    }
+    .nav-links li:nth-child(6){
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+    .nav-links li:nth-child(7){
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+    li.fade{
+        opacity: 1;
+    }
+}
+
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    transition: all 0.7s ease;
+    width:0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+/* Banner */  /* Banner */  /* Banner */  /* Banner */
+
+.headline {
+    color: white;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    min-height: 350px;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2),rgba(0,0,0,0.9)), url('assets/CoffeeRules.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+  }
+
+.headline img{
+    align-self: center;
+    width: 450px;
+    height: 450px;
+}
+@media screen and (max-width: 800px){
+    .headline{
+        height: 100vh;
+    }
+    .headline img{
+        display: none;
+    }
+}
+
+/* BODY */  /* BODY */  /* BODY */  /* BODY */
+
+.bodyHeader{
+    font-size: 10vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 3px 3px 1px  #131418 ;
+    transform:  translate(-200px);
+    opacity: 0;
+    animation: fade-in 1s ease 1 0.5s forwards; /*  animation for Coffee Rules */
+}
+@keyframes fade-in {
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+    /* Style for the About Us section */
+
+.About-Us{
+  background: rgba(165, 42, 42, 0.644);
+  padding: 100px 20px;
+}
+
+.About-Us-Header{
+    padding-top: 2%;
+    text-align: center;
+    font-size: 7em;
+    color: white;
+        text-shadow: 2px 1px 1px black;
+
+    font-family: "Dancing Script", cursive;
+}
+
+.About-Us-Text{
+    margin: 20px 45px;
+    font-family: BatangChe;
+    line-height: 2em;
+    text-align: center;
+}
+
+.section-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 3em;
+  
+}
+.box p{
+    text-align: center;
+    letter-spacing: 0.5rem;
+    font-size: 28px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.box p:last-child{
+    margin-top: 35px;
+}
+.box img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.7s ease-in-out;
+    
+}
+.box img:hover{
+    transform: scale(1.2);
+}
+@media (max-width: 768px) {
+    .section-box {
+      flex-direction: column;
+    }
+    
+    .box {
+      text-align: center;
+
+    }
+    .box img{
+        width: 200px;
+      height: 200px;
+    }
+    .box p{
+        font-weight: 300;
+        font-size: 1.2em;
+        line-height: 1.1em;
+        letter-spacing: 0.2rem;
+
+    }
+  }
+
+
+.Box1, .Box2, .Box3, .Box4, .Box5{
+  background-color: rgba(255, 255, 255, 0.849);
+  
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  font-size: 28px;
+}
+@media (max-width: 768px) {
+  .About-Us-Header{
+    text-shadow: 2px 1px 1px black;
+  }
+  .About-Us-Text{
+    font-size: 18px;
+  }
+
+
+}
+
+  
+  /* Style for the location section */
+.location {
+  
+    margin: 5% 20%;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2),rgba(0,0,0,0.9)), url('assets/location.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+	padding: 60px 0;
+	text-align: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px 1px rgb(74, 84, 87);
+}
+
+.location h2 {
+	margin-bottom: 30px;
+	font-size: 4rem;
+	font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px black ;
+}
+.location p{
+    font-size: 2rem;
+	font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px black ;
+}
+.location a{
+    font-size: 2rem;
+	font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px black ;
+}
+.location .view{
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+/* MAP */
+
+.location-map{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+	.location {
+        margin: 0;
+        margin: 20%;
+		padding: 40px 0;
+	}
+
+	.location h2 {
+		font-size: 3.5rem;
+		margin-bottom: 30px;
+	}
+
+}
+
+/* FOOTER */
+
+ 
+  
+  footer h3{
+    font-size: 40px;
+  }
+  .social-media {
+    display: block;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  li i{
+    font-size: 50px;
+  }
+  
+  .social-media a {
+    display: inline-block;
+    margin-right: 20px;
+    color: #fff;
+  }
+  
+  .contact-info {
+    text-align: center;
+  }
+  
+  .contact-info p {
+    margin: 10px 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    footer {
+      padding: 30px;
+    }
+    
+    .social-media {
+      margin-bottom: 20px;
+    }
+    
+    .social-media a {
+      margin-right: 10px;
+    }
+  }
+
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    line-height: 2rem;
+    
+  }
+  
+  .contact {
+    justify-content: center;
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: none;
+    text-decoration: none;
+    color: white;
+  }
+
+  .contact h1,h2{
+    font-size: 3rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .Social{ 
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 2rem;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+  .Social:hover{
+    transform:scale(1.2);
+  }
+  @media (min-width: 768px) {
+    .contact, .social {
+      flex-basis: 50%;
+      text-align: center;
+    }
+    .trademark {
+      flex-basis: 100%;
+    }
+  }
+  

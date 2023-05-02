@@ -1,0 +1,238 @@
+
+.coffeeCategory{
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    place-self: center;
+    justify-content: center;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;  
+  }
+  .coffeeCategory li{
+      font-size: 20px;
+  }
+  .coldCoffee,.hotCoffee,.beverages{
+      color: black;
+      text-shadow: 1px 1px 2px white;
+  }
+  @media screen and (max-width: 500px){
+      .coffeeCategory{
+          display: grid;
+          gap: 1em;
+          grid-template-columns: repeat(1, 1fr);
+          max-width: 80%;
+          padding: 10px 25px 10px 25px;
+          height: auto;
+          text-align: left;
+          place-self: center;
+          justify-content: center;
+      } 
+  }
+   
+    h2, h3, h4 {
+      margin-bottom: 10px;
+    }
+    
+    ul {
+      list-style: none;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+  
+  .tabs label{
+      display: block;
+      font-size: 3rem;
+      padding: 1rem 2rem;
+      margin-right: 0.2rem;
+      cursor: pointer;
+    background: #7fc3fa;
+    font-weight: bold;
+    border-radius: 20px;
+  }
+  
+    .Menu-Items{
+      text-align: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      grid-gap: 110px;
+    }
+  
+    .Coffee{
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2em;
+    }
+  
+    .tabs input[type="radio"]:checked + label + .Coffee {
+      display: grid;
+    }
+  .Card-Items{
+  
+      background: linear-gradient(120deg, rgba(48, 48, 48, 0.144), rgba(141, 46, 46, 0.192));
+      margin-bottom: 50px;
+      border-bottom-left-radius: 20px;
+      border-top-right-radius: 20px;
+      padding: 50px 20px;
+      background: linear-gradient(120deg, rgba(48, 48, 48, 0.55), rgba(141, 46, 46, 0.55));
+      box-shadow: 5px 5px 5px rgb(107, 85, 62);
+  }
+  
+  @media only screen and (max-width: 840px) {
+      .Coffee{
+          display: grid;
+          text-align: center;
+          justify-content: center;
+          grid-template-columns: repeat(1, 2fr);
+          justify-content: space-between;
+          flex-wrap: wrap;
+  
+        }
+  }
+  
+  .Item-Title{
+      font-size: 2em;
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 1px 1px rgb(165, 96, 96);
+  }
+  
+  .img{
+      height: 150px;
+      width: 150px;
+      background: transparent;
+      border-radius: 50%;
+      transition: 0.5s ease-in-out;
+      padding-bottom: 20px;
+    }
+    .img:hover{
+      transform: scale(1.5);
+    }
+  
+  .Price {
+      float: none;
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 1.5em;
+      text-shadow: none;
+      text-shadow: 2px 2px #131418;
+      font-size: 1.5em;
+    }
+  
+    /* Menu styles */
+    .menu {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .menu-header{
+      font-size: 5em;
+      font-family: "Dancing Script", cursive;
+    }
+    .menu-categories {
+      margin-bottom: 40px;
+    }
+    .menu p{
+      font-family: Barlow;
+    }
+    
+  .menu-categories li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .menu-items {
+    text-align: center;
+    display: grid;
+  }
+  .beverages{
+    display: grid;
+
+  }
+  
+  .menu-items h3 {
+    margin-bottom: 20px;
+  }
+  
+  .menu-items li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+    background: linear-gradient(120deg, rgba(48, 48, 48, 0.55), rgba(141, 46, 46, 0.55));
+    box-shadow: 5px 5px 5px rgb(112, 88, 63);
+  }
+  
+  .menu-items li:last-child {
+    border-bottom: none;
+  }
+  
+  .menu-items h4 {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+  .menu-items p{
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  
+  .menu-items .price {
+    text-align: right;
+    color: #fffefe;
+    text-shadow: 2px 2px #131418;
+    font-size: 1.2em;
+
+  }
+  
+  /* Media queries */
+  @media only screen and (max-width: 768px) {
+    .menu-categories {
+      display:block;
+    }
+    
+    .menu-items li {
+      width: 100%;
+      background: linear-gradient(120deg, rgba(48, 48, 48, 0.55), rgba(141, 46, 46, 0.55));
+    }
+    .menu-items h4{
+        text-align: center;
+    }
+    .menu-items p{
+        text-align: center;
+    }
+    
+    .menu-items .price {
+      float: none;
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 1.5em;
+      text-shadow: none;
+      text-shadow: 2px 2px #131418;
+      font-size: 1.5em;
+    }
+  }
+
+.Discount{
+    text-align: right;
+    font-size: 2em;
+    text-decoration:underline;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }

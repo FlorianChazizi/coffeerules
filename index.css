@@ -1,0 +1,119 @@
+body {
+    background: linear-gradient(to bottom, #2e2e2e, #292929);
+    background-size: 100% 100%;
+    position: relative;
+}
+  body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://cdn.pixabay.com/photo/2014/09/25/23/36/glitter-460711__480.jpg");
+    opacity: 0.3;
+    z-index: -1;
+}
+.shops-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+.shop {
+    text-align: center;
+    width: 45%;
+  }
+  .shop img {
+    border-radius: 50%;
+    width: 400px;
+    height: 350px;
+    max-width: 400px;
+    margin: 0 auto 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.534);
+}
+.shop img:hover {
+    margin: 0 auto 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.753);
+}
+ a, p{
+    color: white;
+    text-decoration: none;
+}
+  
+.shop h1 {
+    font-family: "Helvetica Neue", sans-serif;
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .shop p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  @media only screen and (max-width: 600px) {
+    .shops-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .shop {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+  
+
+
+  .tabs {
+    display: block;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .tabs label {
+    order: 1; 
+    display: block;
+    padding: 1rem 2rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    background: #90CAF9;
+    font-weight: bold;
+    transition: background ease 0.2s;
+    border-radius: 20px;
+    margin-top: 0.2rem;
+
+  }
+  .tabs .tab {
+    order: 99;
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 20px;
+  }
+  .tabs input[type="radio"] {
+    display: none;
+  }
+  .tabs input[type="radio"]:checked + label {
+    background: #fff;
+  }
+  .tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+  }
+  @media (max-width: 45em) {
+    .tabs .tab,
+    .tabs label {
+      order: initial;
+    }
+    .tabs label {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 0.2rem;
+    }
+  }
+  /**
+   * Generic Styling
+  */
+  
