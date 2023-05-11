@@ -3,10 +3,7 @@
     padding: 0;
     font-family: sans-serif;
     letter-spacing: 1px;
-    font-weight: 600;
-    
-}
-body{
+    font-weight: 600;  
 }
 
 nav{
@@ -379,41 +376,72 @@ nav{
 }
 
 /* FOOTER */
+footer {
 
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  line-height: 4rem;
+}
+.contact {
+  justify-content: center;
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: none;
+  text-decoration: none;
+  color: white;
+}
+footer h3{
+  font-size: 40px;
+}
+.social-media {
+  display: block;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+li i{
+  font-size: 50px;
+}
+.social-media a {
+  display: inline-block;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.contact-info {
+  text-align: center;
+}
  
-  
-  footer h3{
-    font-size: 40px;
-  }
-  .social-media {
-    display: block;
-    justify-content: center;
-    margin-bottom: 30px;
-  }
+ .contact-info p {
+   margin: 10px 0;
+ }
 
-  li i{
-    font-size: 50px;
-  }
+.contact h1,h2{
+  font-size: 3rem;
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
+ .Social{ 
+     display: inline-block;
+     margin-right: 20px;
+     font-size: 2rem;
+     color: #fff;
+     transition: 0.3s ease-in-out;
+ }
+ .Social:hover{
+   transform:scale(1.5);
+   color: rgba(255, 0, 0, 0.932);
+ }
   
-  .social-media a {
-    display: inline-block;
-    margin-right: 20px;
-    color: #fff;
-  }
-  
-  .contact-info {
-    text-align: center;
-  }
-  
-  .contact-info p {
-    margin: 10px 0;
-  }
-  
-  @media screen and (max-width: 768px) {
-    footer {
-      padding: 30px;
-    }
-    
+ @media screen and (max-width: 768px) {
+   footer {
+     padding: 30px;
+   }
+   
     .social-media {
       margin-bottom: 20px;
     }
@@ -421,46 +449,6 @@ nav{
     .social-media a {
       margin-right: 10px;
     }
-  }
-
-
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    display: block;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    line-height: 2rem;
-    
-  }
-  
-  .contact {
-    justify-content: center;
-    flex-basis: 100%;
-    text-align: center;
-    margin-bottom: none;
-    text-decoration: none;
-    color: white;
-  }
-
-  .contact h1,h2{
-    font-size: 3rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .Social{ 
-    display: inline-block;
-    margin-right: 20px;
-    font-size: 2rem;
-    color: #fff;
-    transition: 0.3s ease-in-out;
-  }
-  .Social:hover{
-    transform:scale(1.2);
-  }
-  @media (min-width: 768px) {
     .contact, .social {
       flex-basis: 50%;
       text-align: center;
@@ -469,4 +457,3 @@ nav{
       flex-basis: 100%;
     }
   }
-  
