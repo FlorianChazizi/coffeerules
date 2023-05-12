@@ -69,15 +69,16 @@ body {
     font-size: 16px;
     margin-bottom: 20px;
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
     .shops-container {
       flex-direction: column;
       align-items: center;
+      height: 120vh;
     }
     .shop-one, .shop-two {
-      padding-top: 0;
+      padding-top: 25px;
       width: 100%;
-      margin-bottom: 40px;
+      height: 100%;  
     }
   }
 
