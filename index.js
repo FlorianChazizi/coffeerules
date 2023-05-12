@@ -13,15 +13,16 @@ hamburger.addEventListener('click', ()=>{
     hamburger.classList.toggle("toggle");
 });
 
-
 function myTabOne() {
     var x = document.getElementById("CoffeeTab");
+    var y = document.getElementById('Coffee');
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {
       x.style.display = "none";
     }
   }
+
   function myTabTwo() {
     var x = document.getElementById("BreakfastTab");
     if (x.style.display === "none") {
@@ -30,6 +31,7 @@ function myTabOne() {
       x.style.display = "none";
     }
   }
+
   function myTabThree() {
     var x = document.getElementById("DessertsTab");
     if (x.style.display === "none") {

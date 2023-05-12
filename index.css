@@ -20,11 +20,25 @@ body {
     align-items: center;
     height: 100vh;
 }
-.shop {
+.shop-one{
+  background-size: cover;
+  background-position: center;
+
+}
+.shop-two{
+  background-size: cover;
+  background-position: center;
+}
+.shop-one, .shop-two {
     text-align: center;
     width: 45%;
   }
-  .shop img {
+  .shop-one .shop-img{
+    background: linear-gradient(rgba(0, 0, 0, 0.932),rgba(0,0,0,0.32),rgba(0,0,0,0.932)),  url(assets/heartcoffee.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .shop-img {
     border-radius: 50%;
     width: 400px;
     height: 350px;
@@ -32,23 +46,25 @@ body {
     margin: 0 auto 20px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.534);
 }
-.shop img:hover {
+.shop-img:hover {
     margin: 0 auto 20px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.753);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.753);
 }
+
+
  a, p{
     color: white;
     text-decoration: none;
 }
   
-.shop h1 {
+.shop-one h1, .shop-two h1 {
     font-family: "Helvetica Neue", sans-serif;
     color: white;
-    font-size: 2.5em;
+    font-size: 3em;
     margin-bottom: 10px;
   }
   
-  .shop p {
+  .shop-one, .shop-two p {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     margin-bottom: 20px;
@@ -58,62 +74,193 @@ body {
       flex-direction: column;
       align-items: center;
     }
-    .shop {
+    .shop-one, .shop-two {
+      padding-top: 0;
       width: 100%;
       margin-bottom: 40px;
     }
   }
-  
 
 
-  .tabs {
-    display: block;
-    flex-wrap: wrap;
+    /* Style for the About Us section */
+
+.About-Us{
+  background: #E6AC6F;
+  padding: 100px 20px;
+}
+
+.About-Us-Header{
+    padding-top: 2%;
     text-align: center;
-  }
-  .tabs label {
-    order: 1; 
-    display: block;
-    padding: 1rem 2rem;
-    margin-right: 0.2rem;
-    cursor: pointer;
-    background: #90CAF9;
-    font-weight: bold;
-    transition: background ease 0.2s;
-    border-radius: 20px;
-    margin-top: 0.2rem;
+    font-size: 7em;
+    color: white;
+        text-shadow: 2px 1px 1px black;
 
-  }
-  .tabs .tab {
-    order: 99;
-    flex-grow: 1;
-    width: 100%;
-    display: none;
-    padding: 1rem;
-    background: #fff;
-    border-radius: 20px;
-  }
-  .tabs input[type="radio"] {
-    display: none;
-  }
-  .tabs input[type="radio"]:checked + label {
-    background: #fff;
-  }
-  .tabs input[type="radio"]:checked + label + .tab {
-    display: block;
-  }
-  @media (max-width: 45em) {
-    .tabs .tab,
-    .tabs label {
-      order: initial;
-    }
-    .tabs label {
-      width: 100%;
-      margin-right: 0;
-      margin-top: 0.2rem;
-    }
-  }
-  /**
-   * Generic Styling
-  */
+    font-family: "Dancing Script", cursive;
+}
+
+.About-Us-Text{
+    margin: 20px 45px;
+    font-family: BatangChe;
+    line-height: 2em;
+    text-align: center;
+}
+
+.section-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 3em;
   
+}
+.box p{
+    text-align: center;
+    letter-spacing: 0.5rem;
+    font-size: 28px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.box p:last-child{
+    margin-top: 35px;
+}
+.box img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.7s ease-in-out;
+    
+}
+.box img:hover{
+    transform: scale(1.2);
+}
+@media (max-width: 768px) {
+    .section-box {
+      flex-direction: column;
+    }
+    
+    .box {
+      text-align: center;
+
+    }
+    .box img{
+        width: 200px;
+      height: 200px;
+    }
+    .box p{
+        font-weight: 300;
+        font-size: 1.2em;
+        line-height: 1.1em;
+        letter-spacing: 0.2rem;
+
+    }
+  }
+
+
+.Box1, .Box2, .Box3, .Box4, .Box5{
+  background-color: rgba(255, 255, 255, 0.849);
+  
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  font-size: 28px;
+}
+@media (max-width: 768px) {
+  .About-Us-Header{
+    text-shadow: 2px 1px 1px black;
+  }
+  .About-Us-Text{
+    font-size: 18px;
+  }
+
+
+}
+  
+
+/* FOOTER */
+footer {
+
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  line-height: 4rem;
+}
+.contact {
+  justify-content: center;
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: none;
+  text-decoration: none;
+  color: white;
+}
+footer h3{
+  font-size: 40px;
+}
+.social-media {
+  display: block;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+li i{
+  font-size: 50px;
+}
+.social-media a {
+  display: inline-block;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.contact-info {
+  text-align: center;
+}
+ 
+ .contact-info p {
+   margin: 10px 0;
+ }
+
+.contact h1,h2{
+  font-size: 3rem;
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
+ .Social{ 
+     display: inline-block;
+     margin-right: 20px;
+     font-size: 2rem;
+     color: #fff;
+     transition: 0.3s ease-in-out;
+ }
+ .Social:hover{
+   transform:scale(1.5);
+   color: rgba(255, 0, 0, 0.932);
+ }
+  
+ @media screen and (max-width: 768px) {
+   footer {
+     padding: 30px;
+   }
+   
+    .social-media {
+      margin-bottom: 20px;
+    }
+    
+    .social-media a {
+      margin-right: 10px;
+    }
+    .contact, .social {
+      flex-basis: 50%;
+      text-align: center;
+    }
+    .trademark {
+      flex-basis: 100%;
+    }
+  }
