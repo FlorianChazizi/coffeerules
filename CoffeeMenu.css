@@ -181,9 +181,9 @@ nav{
     font-weight: bold;
     margin-right: 0.2rem;
     cursor: pointer;
-    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);    color: #000000;
+    background: linear-gradient(90deg, rgba(44, 41, 41, 0.8),  rgba(44, 41, 41, 0.473), rgb(44, 43, 43)); 
     color: white;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
     transition: background ease .5s;
     border-radius: 20px;
     margin-top: 0.2rem;
@@ -204,7 +204,7 @@ nav{
 
     margin: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.589);
     align-items: center;
 }
   
@@ -221,7 +221,6 @@ nav{
           width: 80vw;
         }
   }  
-
   .Item-Title{
     font-size: 1.5rem;
     font-weight: bold;
@@ -254,7 +253,6 @@ nav{
     }
 
   .tabs .tab {
-
     width: 100%;
     display: none;
     border-radius: 20px;
@@ -263,9 +261,7 @@ nav{
     display: none;
   }
   .tabs input[type="radio"]:checked + label {
-    background: linear-gradient(217deg, rgba(141, 8, 8, 0.8), rgba(255,0,0,0) 70.71%),
-                linear-gradient(127deg, rgba(21, 128, 21, 0.8), rgba(0,255,0,0) 70.71%),
-                linear-gradient(336deg, rgba(110, 110, 252, 0.8), rgba(6, 6, 54, 0) 70.71%);  }
+      }
   .tabs input[type="radio"]:checked + label + .tab + .Coffee {
     display: block;
   }

@@ -191,6 +191,7 @@ nav{
 @media screen and (max-width: 800px){
     .headline{
         height: 100vh;
+        
     }
     .headline img{
         display: none;
@@ -293,15 +294,54 @@ nav{
     }
   }
 
-
-.Box1, .Box2, .Box3, .Box4, .Box5{
-  background-color: rgba(255, 255, 255, 0.849);
+  .box1 {
+    display: inline-block;
+    background: url('assets/Dymelo.jpg');
+    background-size: 100% 100% ;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    vertical-align: middle;
+  }
+  .box1:hover{
+    background-size: 105%  105%;
   
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-  border-bottom-left-radius: 40px;
-  font-size: 28px;
-}
+  }
+  .box2 {
+    display: inline-block;
+    background: url('assets/healhlyproducts.jpg');
+    background-size: 100% 100% ;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    vertical-align: middle;
+  }
+  .box2:hover{
+    background-size: 105%  105%;
+  
+  }
+  .box3 {
+    display: inline-block;
+    background: url('assets/Koulouri.jpg');
+    background-size: 100% 100% ;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    vertical-align: middle;
+  }
+  .box3:hover{
+    background-size: 105%  105%;
+  
+  }
+
+
+
 @media (max-width: 768px) {
   .About-Us-Header{
     text-shadow: 2px 1px 1px black;
@@ -310,7 +350,10 @@ nav{
     font-size: 18px;
   }
 
-
+  .box1, .box2, .box3, .box4, .box5{
+    width: 200px;
+  height: 200px;
+}
 }
 
   
