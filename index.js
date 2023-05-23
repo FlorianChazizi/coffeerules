@@ -40,3 +40,18 @@ function myTabOne() {
       x.style.display = "none";
     }
   }
+
+
+  function showMenu(menuId) {
+    var selectedMenu = document.getElementById(menuId);
+    var isMenuVisible = selectedMenu.style.display === "block";
+
+    // Hide all menu contents
+    var menuContents = document.getElementsByClassName("menu-content");
+    for (var i = 0; i < menuContents.length; i++) {
+      menuContents[i].style.display = "none";
+    }
+
+    // Show the selected menu content if it was not visible, otherwise hide it
+    selectedMenu.style.display = isMenuVisible ? "none" : "block";
+  }

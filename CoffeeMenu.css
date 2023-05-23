@@ -9,7 +9,7 @@
 nav{
   height: 6rem;
   width: 100vw;
-  background-color: #131418;
+  background-color: #262830;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   position: relative;
@@ -167,32 +167,45 @@ nav{
 
 /* Categories Drop Down Divs */
 
-.tabs {
-  display: block;
-  flex-wrap: wrap;
-  text-align: center;
-  padding: 5%;
-}
-  .tabs label{
-    padding: 0.5rem 2rem;
-    margin-right: 0.2rem;
-    display: block;
-    font-size: 3rem;
-    font-weight: bold;
-    margin-right: 0.2rem;
-    cursor: pointer;
-    background: linear-gradient(90deg, rgba(44, 41, 41, 0.8),  rgba(44, 41, 41, 0.473), rgb(44, 43, 43)); 
-    color: white;
-    text-shadow: 1px 1px 3px rgb(0, 0, 0);
-    transition: background ease .5s;
-    border-radius: 20px;
-    margin-top: 0.2rem;
-}  
 
-.Menu-Items{
-  left: 0;
-  
-}
+
+  .menu-container {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .menu-button {
+    width: 500px;
+    height: 100px;
+    font-size: 3rem;
+    padding: 15px 20px;
+    margin-top: 50px;
+    background-color: #3b323f;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    border-radius: 12px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+  }
+  .menu-button:hover {
+        font-size: 3.2rem;
+
+        box-shadow: 3px 2px 15px rgb(0, 0, 0);
+
+
+  }
+
+  .menu-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+
+
   .Coffee{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -201,14 +214,14 @@ nav{
 }
 
   .Card-Items{
-
     margin: 20px;
     border-radius: 10px;
+    background: #5555552f;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.589);
     align-items: center;
 }
   
-  @media only screen and (max-width: 840px) {
+  @media only screen and (max-width: 550px) {
       .Coffee{
           display: grid;
           text-align: center;
@@ -217,9 +230,22 @@ nav{
           justify-content:space-evenly;
           flex-wrap: wrap;
         }
-        .tabs{
-          width: 80vw;
+
+        .menu-button {
+          width: 100%;
+          height: 100px;
+          font-size: 3rem;
+          padding: 15px 20px;
+          margin-top: 100px;
+          background-color: #3b323f;
+          box-shadow: 2px 2px 5px rgb(0, 0, 0);
+          border-radius: 12px;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          transition: 0.25s ease-in-out;
         }
+        
   }  
   .Item-Title{
     font-size: 1.5rem;
@@ -234,7 +260,7 @@ nav{
   .img{
       width: 100%;
       background: transparent;
-      border-radius: 50%;
+      border-radius: 20%;
       transition: 0.5s ease-in-out;
     }
     .img:hover{
@@ -252,22 +278,7 @@ nav{
       text-shadow: none;
     }
 
-  .tabs .tab {
-    width: 100%;
-    display: none;
-    border-radius: 20px;
-  }
-  .tabs input[type="radio"] {
-    display: none;
-  }
-  .tabs input[type="radio"]:checked + label {
-      }
-  .tabs input[type="radio"]:checked + label + .tab + .Coffee {
-    display: block;
-  }
-  .tabs input[type="radio"]:checked + label + .Coffee {
-    display: block;
-}
+ 
   @media (max-width: 800px) {
     .tabs{
       padding-top: 150px;
@@ -370,3 +381,5 @@ li i{
       flex-basis: 100%;
     }
   }
+
+

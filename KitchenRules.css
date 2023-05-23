@@ -9,7 +9,7 @@
 nav{
     height: 6rem;
     width: 100vw;
-    background-color: #131418;
+    background-color: #262830;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
     display: flex;
     position: relative;
@@ -22,8 +22,8 @@ nav{
     text-align: center;
 }
 .logo img{
-    height: 9.5vh;
-    width: 9.5vh;
+    height: 100px;
+    width: 125px;
     border-radius: 50%;
 }
 
@@ -253,7 +253,7 @@ nav{
 }
 .box p{
     text-align: center;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.32rem;
     font-size: 28px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -268,10 +268,11 @@ nav{
     transition: 0.7s ease-in-out;
     
 }
-.box img:hover{
-    transform: scale(1.2);
-}
+
 @media (max-width: 768px) {
+  .About-Us-Header{
+    font-size: 56px;
+  }
     .section-box {
       flex-direction: column;
     }
@@ -279,10 +280,6 @@ nav{
     .box {
       text-align: center;
 
-    }
-    .box img{
-        width: 200px;
-      height: 200px;
     }
     .box p{
         font-weight: 300;
@@ -320,7 +317,7 @@ nav{
     vertical-align: middle;
   }
   .box2:hover{
-    background-size: 115%  115%;
+    background-size: 115%  110%;
   
   }
   .box3 {

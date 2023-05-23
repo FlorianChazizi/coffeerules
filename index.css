@@ -15,28 +15,28 @@ body {
 }
 .shop-one{
   flex: 1;
-  background: linear-gradient(rgba(0, 0, 0, 0.932),rgba(0,0,0,0.32),rgba(0,0,0,0.932)), url('assets/CoffeeRules.jpg');
-  background-size: 150%;
+  background: linear-gradient(rgba(0, 0, 0, 0.877),rgba(0,0,0,0.15),rgba(0,0,0,0.877)), url('assets/box4.jpg');
+  background-size: 100%;
   background-position: center;
   height: 100vh;
   width: 50vh;
-  -webkit-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.75s ease-in-out;
 }
 .shop-one:hover{
-  background-size: 180%;
+  background-size: 125%;
 }
 
 .shop-two{
   flex: 1;
   background:  linear-gradient(rgba(0, 0, 0, 0.932),rgba(0,0,0,0.32),rgba(0,0,0,0.932)), url('assets/KitchenRulesBanner.jpg');
-  background-size: 150%;
+  background-size: 125%;
   background-position: center;
   height: 100vh;
  
- -webkit-transition: all 0.5s ease-in-out;
+ -webkit-transition: all 0.75s ease-in-out;
 }
 .shop-two:hover{
-  background-size: 200%
+  background-size: 145%
 }
 .shop-one, .shop-two {
     text-align: center ;
@@ -123,14 +123,7 @@ body {
 
     font-family: "Dancing Script", cursive;
 }
-
-.About-Us-Text{
-    margin: 20px 45px;
-    font-family: BatangChe;
-    line-height: 2em;
-    text-align: center;
-}
-
+ 
 .section-box{
     display: flex;
     flex-wrap: wrap;
@@ -144,6 +137,7 @@ body {
   line-height: 3em;
   justify-content: center;
   align-items: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .box1 {
   display: inline-block;
@@ -221,9 +215,9 @@ body {
 }
 .box p{
     text-align: center;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.25rem;
     font-size: 28px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Marvel;
 }
 .box p:last-child{
     margin-top: 35px;

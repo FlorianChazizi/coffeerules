@@ -9,11 +9,11 @@
 nav{
     height: 6rem;
     width: 100vw;
-    background-color: #131418;
+    background-color: #262830;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
     display: flex;
     position: relative;
-    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
 }
 
 /*Styling logo*/
@@ -22,8 +22,8 @@ nav{
     text-align: center;
 }
 .logo img{
-    height: 9.5vh;
-    width: 9.5vh;
+  height: 100px;
+  width: 125px;
     border-radius: 50%;
 }
 

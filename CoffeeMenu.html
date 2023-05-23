@@ -38,81 +38,128 @@
 </div>
  <!--  DropDown  Section  -->
 
-  <div class="tabs">
-    <input type="radio"  onclick=myTabOne() name="tabs" id="tabone">
-    <label for="tabone" > Coffee </label>
-        <!--  COffee Section  -->  <!--  COffee Section  -->  <!--  COffee Section  -->
-    <div class="tab" id="CoffeeTab">
-      <div class="Menu-Items">
-            <div class="Coffee" >             
-                <div class="Card-Items">
-                  <img class="img" src="assets/espresso.png" alt="">
-                    <p class="Item-Title">Espresso</p>
-                    <p class="Item-Desc">A shot of espresso.</p>
-                    <p class="Price">£2</p>
-                </div>
-                <div class="Card-Items">
-                  <img class="img" src="assets/Despresso.png" alt="">
-                    <p class="Item-Title">Double Espresso</p>
-                    <p class="Item-Desc">A double shot of espresso.</p>
-                    <p class="Price">£2.5</p>
-                </div>
-                <div class="Card-Items">
-                  <img class="img" src="assets/machiatto-removebg-preview.png" alt="">
-                    <p class="Item-Title">Macchiatto</p>
-                    <p class="Item-Desc">A single espresso topped with foamed milk served in a small cup.</p>
-                    <p class="Price">£2.5</p>
-                </div>
-                <div class="Card-Items">
-                  <img class="img" src="assets/Dmachiatto-removebg-preview.png" alt="">
-                    <p class="Item-Title">Double Macchiato</p>
-                    <p class="Item-Desc">A double espresso topped with foamed milk served in a small cup.</p>
-                    <p class="Price">£2</p>
-                </div>
-                <div class="Card-Items">
-                  <img class="img" src="assets/freddo-espresso-removebg-preview.png" alt="">
-                    <p class="Item-Title">Freddo Espresso</p>
-                    <p class="Item-Desc">Freddo Espresso is made out of espresso and blended in a frappe coffee frother.</p>
-                    <p class="Price">£3</p>
-                </div>
-                <div class="Card-Items">
-                  <img class="img" src="assets/Freddo-Cappucino-removebg-preview.png" alt="">
-                    <p class="Item-Title">Freddo Cappucino</p>
-                    <p class="Item-Desc">Freddo Espresso with frothed milk.</p>
-                    <p class="Price">£3.5</p>
-                </div>
-                
-            </div>
-          </div>
-    </div>
-    <input type="radio" onclick="myTabTwo()" name="tabs" id="tabtwo">	
-    <label for="tabtwo"> Breakfast </label>
-    
-    <div class="tab" id="BreakfastTab">
-      <h1> Breakfast </h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+ <div class="menu-container">
+  <button class="menu-button" onclick="showMenu('menu1')">Coffee</button>
+  <div id="menu1" class="menu-content">
+    <h2>Coffees</h2>
+    <div class="Coffee" >             
 
-    <input type="radio" onclick="myTabThree()" name="tabs" id="tabthree">
-    <label for="tabthree"> Desserts </label>
-
-    <div class="tab" id="DessertsTab">
-      <h1> Desserts </h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <div class="Card-Items">
+      <img class="img" src="assets/espresso.png" alt="">
+        <p class="Item-Title">Espresso</p>
+        <p class="Item-Desc">A shot of espresso.</p>
+        <p class="Price">£2</p>
     </div>
-
+    <div class="Card-Items">
+      <img class="img" src="assets/Despresso.png" alt="">
+        <p class="Item-Title">Double Espresso</p>
+        <p class="Item-Desc">A double shot of espresso.</p>
+        <p class="Price">£2.5</p>
+    </div>
+    <div class="Card-Items">
+      <img class="img" src="assets/machiatto-removebg-preview.png" alt="">
+        <p class="Item-Title">Macchiatto</p>
+        <p class="Item-Desc">A single espresso topped with foamed milk served in a small cup.</p>
+        <p class="Price">£2.5</p>
+    </div>
+    <div class="Card-Items">
+      <img class="img" src="assets/Dmachiatto-removebg-preview.png" alt="">
+        <p class="Item-Title">Double Macchiato</p>
+        <p class="Item-Desc">A double espresso topped with foamed milk served in a small cup.</p>
+        <p class="Price">£2</p>
+    </div>
+    <div class="Card-Items">
+      <img class="img" src="assets/freddo-espresso-removebg-preview.png" alt="">
+        <p class="Item-Title">Freddo Espresso</p>
+        <p class="Item-Desc">Freddo Espresso is made out of espresso and blended in a frappe coffee frother.</p>
+        <p class="Price">£3</p>
+    </div>
+    <div class="Card-Items">
+      <img class="img" src="assets/Freddo-Cappucino-removebg-preview.png" alt="">
+        <p class="Item-Title">Freddo Cappucino</p>
+        <p class="Item-Desc">Freddo Espresso with frothed milk.</p>
+        <p class="Price">£3.5</p>
+    </div>
+    <div class="Card-Items">
+      <img class="img" src="assets/Cappucino.jpeg-removebg-preview.png" alt="">
+        <p class="Item-Title">Cappucino</p>
+        <p class="Item-Desc">Cappuccino is  made by combining equal parts of espresso, steamed milk, and milk foam.</p>
+        <p class="Price">£3.5</p>
+    </div>
+    <div class="Card-Items">
+      <img class="img" src="assets/Latte-removebg-preview.png" alt="">
+        <p class="Item-Title">Latte</p>
+        <p class="Item-Desc">A shot of espressso with a larger ammount of steamed
+          milk poured into a cup
+        </p>
+        <p class="Price">£3.5</p>
+    </div>
+    </div>
+</div>
   </div>
+</div>
 
-</section>
+<div class="menu-container">
+  <button class="menu-button" onclick="showMenu('menu2')">Breakfast</button>
+  <div id="menu2" class="menu-content">
+    <h2>Breakfast</h2>
+    <p>This is the content of Category 2.</p>
+    <p>You can add your menu items/cards here.</p>
+    <div class="Coffee" >             
+
+    <div class="Card-Items">
+      <img class="img" src="assets/espresso.png" alt="">
+        <p class="Item-Title">Espresso</p>
+        <p class="Item-Desc">A shot of espresso.</p>
+        <p class="Price">£2</p>
+    </div>
+    <div class="Card-Items">
+      <img class="img" src="assets/Despresso.png" alt="">
+        <p class="Item-Title">Double Espresso</p>
+        <p class="Item-Desc">A double shot of espresso.</p>
+        <p class="Price">£2.5</p>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="menu-container">
+  <button class="menu-button" onclick="showMenu('menu3')">Desserts</button>
+  <div id="menu3" class="menu-content">
+    <h2>Desserts</h2>
+    <p>This is the content of Category 3.</p>
+    <p>You can add your menu items/cards here.</p>
+    <div class="Coffee" >             
+
+    <div class="Card-Items">
+      <img class="img" src="assets/espresso.png" alt="">
+        <p class="Item-Title">Espresso</p>
+        <p class="Item-Desc">A shot of espresso.</p>
+        <p class="Price">£2</p>
+    </div>
+    <div class="Card-Items">
+      <img class="img" src="assets/Despresso.png" alt="">
+        <p class="Item-Title">Double Espresso</p>
+        <p class="Item-Desc">A double shot of espresso.</p>
+        <p class="Price">£2.5</p>
+    </div>
+    </div>
+  </div>
+</div>
+
+
 
         <footer class="contact" id="contact">
           <h1>Contact Us</h1>
           <p>Phone: 123-456-7890</p>
-          <p>Email: coffeeRulesmcr@gmail.com</p>
+          <p>coffeerulesmcr@gmail.com</p>
           <a href="https://www.instagram.com/coffeerulessalford/">
           <i  class="fab fa-instagram Social"></i></a></li>              
           <p>&copy; 2023 Coffee Rules</p>
       </footer>
-  <script src="index.js"></script>
+  <script src="index.js">
+     // Show the initial menu
+     showMenu('menu1');
+  </script>
 </body>
 </html>
